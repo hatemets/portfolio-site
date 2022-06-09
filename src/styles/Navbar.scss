@@ -1,4 +1,4 @@
-a {
+.links > a {
     color: #ddd;
     text-decoration: none;
     padding: 3vh 2vw;
@@ -12,6 +12,18 @@ a {
     height: 10vh;
     display: flex;
     justify-content: space-between;
+
+    #logo-link {
+        margin-left: 3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        #logo {
+            display: flex;
+            align-items: center;
+        }
+    }
 
     .links {
         display: flex;
