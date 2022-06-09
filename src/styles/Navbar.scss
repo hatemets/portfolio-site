@@ -1,0 +1,21 @@
+a {
+    color: #ddd;
+    text-decoration: none;
+    padding: 3vh 2vw;
+    font-size: 1.3rem;
+    margin: 0 1vw;
+}
+
+#nav {
+    background-color: #332332;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+
+    .links {
+        display: flex;
+
+    }
+}
+
