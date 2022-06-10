@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom"
 import "../styles/Navbar.scss"
-import "../styles/general.scss"
 import InitialsLogo from "../components/InitialsLogo"
 import SideMenuIcon from "../components/SideMenuIcon"
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import Sidebar from "../components/Sidebar"
 
 
