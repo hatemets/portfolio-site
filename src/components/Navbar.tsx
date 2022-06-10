@@ -4,10 +4,11 @@ import "../styles/general.scss"
 import InitialsLogo from "../components/InitialsLogo"
 import SideMenuIcon from "../components/SideMenuIcon"
 import { useState, useEffect } from "react"
+import Sidebar from "../components/Sidebar"
 
 
 const Navbar = () => {
-    const [isOpen, setOpen] = useState(false)
+    const [isOpen, setOpen] = useState(true)
 
     return (
         <nav id="nav">
@@ -16,6 +17,7 @@ const Navbar = () => {
             </Link>
 
             <SideMenuIcon toggle={() => setOpen(!isOpen)} />
+            <Sidebar isOpen={isOpen} />
 
             <div className="links">
                 <Link to="/about">About</Link>

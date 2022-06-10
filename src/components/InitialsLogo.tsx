@@ -9,7 +9,7 @@ const InitialsLogo = () => {
             <path
                 d="M 10 80 L 10 20 L 34 58 L 58 14 L 58 80 L 58 50 L 90 50 L 90 14 L 90 80"
                 stroke="#eee"
-                stroke-width="5"
+                strokeWidth="5"
                 fill="transparent"
             />
         </svg>
