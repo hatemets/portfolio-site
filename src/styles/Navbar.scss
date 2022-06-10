@@ -16,7 +16,7 @@
     justify-content: space-between;
 
     #logo-link {
-        margin-left: 3vw;
+        margin-left: 4vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -37,9 +37,15 @@
 @media screen and (max-width: 480px) {
     #nav {
         height: 12vh;
+        align-items: center;
 
         .links {
             display: none;
+        }
+
+        #menu-icon {
+            margin-right: 5vw;
+            cursor: pointer;
         }
     }
 }
