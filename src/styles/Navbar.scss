@@ -1,13 +1,15 @@
+@import "./_variables.scss";
+
 .links > a {
-    color: #ddd;
+    color: $colorLight;
     text-decoration: none;
     padding: 3vh 2vw;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin: 0 1vw;
 }
 
 #nav {
-    background-color: #332332;
+    background-color: $colorDark;
     width: 100vw;
     height: 10vh;
     display: flex;
@@ -27,7 +29,17 @@
 
     .links {
         display: flex;
-
     }
 }
 
+
+// Phone
+@media screen and (max-width: 480px) {
+    #nav {
+        height: 12vh;
+
+        .links {
+            display: none;
+        }
+    }
+}
