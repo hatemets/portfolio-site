@@ -5,6 +5,7 @@ import About from "./pages/About"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 import "./styles/App.scss"
 
 
@@ -19,6 +20,7 @@ const App = () => {
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/projects" element={<Projects />} />
                 </Routes>
+                <Footer />
             </Router>
         </div>
     )
