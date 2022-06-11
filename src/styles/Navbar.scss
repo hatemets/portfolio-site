@@ -7,7 +7,7 @@
 }
 
 #nav {
-    background-color: $colorDark;
+    background-color: $darker;
     width: 100vw;
     height: 10vh;
     display: flex;
@@ -35,7 +35,7 @@
 
     #sidebar {
         position: absolute;
-        background-color: $colorDark;
+        background-color: $darker;
         width: 100vw;
         height: 100vh;
         top: 0;
@@ -52,7 +52,7 @@
 
 
             a {
-                color: $colorLight;
+                color: $light;
                 padding: 3vh 2vw;
                 font-size: 1.4rem;
                 margin: 0 1vw;

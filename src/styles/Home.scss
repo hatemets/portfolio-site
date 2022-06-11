@@ -1,3 +1,32 @@
+@import "./variables";
+
+$edgeBuffer: 1rem;
+
 #home {
-    display: flex;
+    background-color: $dark;
+    color: $light;
+    width: 100vw;
+
+    p {
+        text-align: left;
+        padding: 0 $edgeBuffer;
+    }
+
+    h1#greeting-title {
+        font-size: 2.3rem;
+    }
+
+    img#profile-pic {
+        margin: $edgeBuffer;
+    }
+
+    p.greeting-text {
+        font-weight: 700;
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+
+    p.regular-text {
+        font-size: 1.1rem;
+    }
 }

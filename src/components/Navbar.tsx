@@ -7,7 +7,7 @@ import Sidebar from "../components/Sidebar"
 
 
 const Navbar = () => {
-    const [isOpen, setOpen] = useState(true)
+    const [isOpen, setOpen] = useState(false)
 
     return (
         <nav id="nav">

@@ -14,23 +14,33 @@ code {
     monospace;
 }
 
+/* Links */
 a {
     text-decoration: none;
-    color: $colorLight;
+    color: $light;
     font-size: 1.4rem;
 }
 
+
+/* Regular text */
+p {
+    line-height: 1.7rem;
+}
+
+/* List items */
 li {
     list-style: none;
 }
 
+/* General classes */
 .wrapper {
     margin: 0 3vw;
     display: flex;
     flex-direction: column;
     text-align: center;
+}
 
-    > * {
-        border: 2px blue solid;
-    }
+/* Images */
+img {
+    border-radius: 6px;
 }
