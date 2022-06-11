@@ -10,12 +10,45 @@ const Home = () => {
 
                 <img id="profile-pic" src={profilePic} alt="Profile" />
 
-                <p className="greeting-text">I'm an Estonian data science student based in Finland. I love creating software ranging from video games to full-stack web applications.</p>
+                <p className="greeting-text">I'm a data science student based in Finland. I love creating software ranging from video games to full-stack web applications.</p>
 
                 <p className="regular-text">
-                    On this website, I try my best to give you an insight into my interests, skills, and doings.
-                    In a way, it serves as an informal resume showcasing my skills and various projects that I've been working on.
+                    In a way, this website serves as an informal resume showcasing my skills and various projects that I've been working on.
                 </p>
+
+                <h3 id="about-me">More about me</h3>
+                <p className="regular-text">
+                    Originally from Estonia, I came to Finland to study data science at Aalto University.
+                    I'm passionate about statistics, machine learning, and full-stack web development.
+                    I've been programming for 4 years and during that time, I've learned to create full-stack web apps, browser automating tools, video games, and machine learning models.
+                </p>
+
+                <h4 id="hobbies-title">Interests & hobbies</h4>
+                <ul id="hobbies-list">
+                    <li className="hobbies-item">
+                        <h6>Racket sports</h6>
+                        <p className="list-text">
+                            I've always been an avid racket sports player. I play regularly tennis, occasionally competing in smaller tournaments.
+                            Besides that, I'm also a huge fan of table tennis, which I've played since I was 8.
+                        </p>
+                    </li>
+
+                    <li className="hobbies-item">
+                        <h6>Linux & Vim</h6>
+                        <p className="list-text">
+                            As nerdy as it sounds, I genuinely enjoy tweaking my workspace to make it aesthetically pleasing as well as to improve my productivity.
+                            For most of my development, I use Linux with Vim text editor, which enables me to customize my environment to my liking.
+                        </p>
+                    </li>
+
+                    <li className="hobbies-item">
+                        <h6>Cycling & motorcycling</h6>
+                        <p className="list-text">
+                            To my mind, there's no better way to spend a sunny day than to go cycling and/or motorcycling.
+                            The feeling of wind blowing against your face while enjoying the view is something that's difficult to imagine without trying it.
+                        </p>
+                    </li>
+                </ul>
             </div>
         </div>
     )
