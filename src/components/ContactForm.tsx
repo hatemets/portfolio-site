@@ -13,29 +13,21 @@ const ContactForm = () => {
 
     const sendEmail = async (event: any) => {
         await event.preventDefault()
-        // emailjs.sendForm(serviceID, templateID, form.current, publicKey)
-        // .then(result => console.log(result.text), error => console.log(error.text))
 
         try {
             const res = await emailjs.sendForm(serviceID, templateID, form.current, publicKey)
             setSubmitted(true)
-            console.log("Mail sent successfully!")
-            console.log(res)
+            alert("Mail sent successfully!")
         }
         catch (err) {
-            console.error("There was an error with sending the form.")
+            alert("There was an error with sending the form.")
             console.error(err)
         }
-
     }
 
-    // useEffect(() => {
-    //     console.log(process.env.REACT_APP_PUBLIC_KEY)
-    //     console.log(process.env)
-    // }, [])
 
     return (
-        <form ref={form} onSubmit={sendEmail}>
+        <form id="contact-form" ref={form} onSubmit={sendEmail}>
             <input type="hidden" name="contact_number" />
             <div>
                 <label>Name</label>
@@ -43,13 +35,15 @@ const ContactForm = () => {
             </div>
             <div>
                 <label>Email</label>
-                <input type="email" name="user_email" />
+                <input type="email" placeholder="Email" name="user_email" />
             </div>
             <div>
                 <label>Message</label>
                 <textarea name="message"></textarea>
             </div>
-            <input type="submit" value="Send" />
+            <div>
+                <input type="submit" value="Send" />
+            </div>
         </form>
     )
 }

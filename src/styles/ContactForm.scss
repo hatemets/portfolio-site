@@ -1,0 +1,39 @@
+form#contact-form {
+    border: 2px white solid;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    > div {
+        flex-grow: 1;
+        // border: 2px solid green;
+        padding: 0;
+        margin: 1rem 0;
+
+        > * {
+            // border: 1px white dashed;
+        }
+
+        label {
+            font-size: $medium;
+            display: block;
+            text-align: left;
+            margin: 0.5rem 0 1rem 0;
+        }
+
+        input {
+            border: 0;
+            // background-color: $semidark;
+            background-color: transparent;
+            // border-radius: $borderRadius;
+            color: $light;
+            height: 2.5rem;
+            width: 80vw;
+            font-size: 1.1rem;
+            padding: 0.4rem 0.8rem;
+            border-bottom: white solid 2px;
+        }
+    }
+}
