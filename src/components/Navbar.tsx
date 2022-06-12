@@ -24,7 +24,7 @@ const Navbar = () => {
                     <Link to="/projects">Projects</Link>
                 </div>
             </nav>
-            <Sidebar isOpen={isOpen} />
+            <Sidebar isOpen={isOpen} setOpen={setOpen} />
         </>
     )
 }
