@@ -7,7 +7,7 @@ const Footer = () => {
     const size = "3x"
 
     return (
-        <div id="footer">
+        <footer id="footer">
             <a href="mailto:heidmetsmark@gmail.com">
                 <FontAwesomeIcon id="email" size={size} icon={faEnvelope} />
             </a>
@@ -19,7 +19,7 @@ const Footer = () => {
             <a id="linkedin-link" href="https://www.linkedin.com/in/mark-heidmets-969006195/">
                 <FontAwesomeIcon id="linkedin" size={size} icon={faLinkedin} />
             </a>
-        </div>
+        </footer>
     )
 }
 

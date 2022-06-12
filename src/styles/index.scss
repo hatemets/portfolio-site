@@ -16,6 +16,11 @@ code {
 }
 
 
+#home, #contact, #projects {
+    margin-top: $navbarHeight;
+}
+
+
 /* Links */
 a {
     text-decoration: none;

@@ -13,9 +13,11 @@
 
 #nav {
     position: fixed;
+    top: 0;
     background-color: $darker;
     width: 100vw;
     height: $navbarHeight;
+    min-height: 70px;
     display: flex;
     justify-content: space-between;
 
@@ -33,6 +35,7 @@
 
     .links {
         display: flex;
+        align-items: center;
     }
 
     #menu-icon {
