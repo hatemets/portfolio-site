@@ -1,16 +1,11 @@
 @import "./variables";
 
 #home {
-    background-color: $dark;
-    color: $light;
-    width: 100vw;
-
     p {
         text-align: left;
     }
 
     #greeting-title {
-        padding-top: 2rem;
         font-size: 2.3rem;
     }
 

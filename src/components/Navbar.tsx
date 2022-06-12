@@ -10,20 +10,22 @@ const Navbar = () => {
     const [isOpen, setOpen] = useState(false)
 
     return (
-        <nav id="nav">
-            <Link to="/" id="logo-link">
-                <InitialsLogo />
-            </Link>
+        <>
+            <nav id="nav">
+                <Link to="/" id="logo-link">
+                    <InitialsLogo />
+                </Link>
 
-            <SideMenuIcon toggle={() => setOpen(!isOpen)} />
+                <SideMenuIcon toggle={() => setOpen(!isOpen)} />
+
+                <div className="links">
+                    <Link to="/">Home</Link>
+                    <Link to="/contact">Contact</Link>
+                    <Link to="/projects">Projects</Link>
+                </div>
+            </nav>
             <Sidebar isOpen={isOpen} />
-
-            <div className="links">
-                <Link to="/about">About</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/projects">Projects</Link>
-            </div>
-        </nav>
+        </>
     )
 }
 

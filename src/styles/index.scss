@@ -1,4 +1,13 @@
 @import "./_variables.scss";
+@import "./Footer.scss";
+@import "./Hobbies.scss";
+@import "./Skills.scss";
+@import "./Home.scss";
+@import "./Navbar.scss";
+@import "./Contact.scss";
+@import "./Projects.scss";
+@import "./Sidebar.scss";
+
 
 body {
     margin: 0;
@@ -15,9 +24,16 @@ code {
     monospace;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    color: $light;
+}
 
 #home, #contact, #projects {
-    margin-top: $navbarHeight;
+    margin: $navbarHeight 0 0 0;
+    min-height: 100vh;
+    background-color: $dark;
+    width: 100vw;
+    color: $light;
 }
 
 
