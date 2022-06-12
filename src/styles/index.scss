@@ -34,7 +34,7 @@ li {
 
 /* General classes */
 .wrapper {
-    margin: 0 3vw;
+    margin: 0 $edgeBuffer;
     display: flex;
     flex-direction: column;
     text-align: center;

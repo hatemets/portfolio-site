@@ -1,7 +1,5 @@
 @import "./variables";
 
-$edgeBuffer: 1rem;
-
 #home {
     background-color: $dark;
     color: $light;
@@ -9,24 +7,29 @@ $edgeBuffer: 1rem;
 
     p {
         text-align: left;
-        padding: 0 $edgeBuffer;
     }
 
-    h1#greeting-title {
+    #greeting-title {
         font-size: 2.3rem;
     }
 
-    img#profile-pic {
-        margin: $edgeBuffer;
+    #profile-pic {
+        margin: $edgeBuffer 0;
+        width: 100%;
     }
 
-    p.greeting-text {
+    .greeting-text {
         font-weight: 700;
         font-size: 1.4rem;
         margin-top: 0;
     }
 
-    p.regular-text {
-        font-size: 1.1rem;
+    h3#about-me {
+        margin-bottom: 0;
+        font-size: $largest;
+    }
+
+    .regular-text {
+        font-size: $regular;
     }
 }
