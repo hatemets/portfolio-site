@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    background-color: $darker;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -13,6 +14,7 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
 
 /* Links */
 a {
@@ -27,10 +29,22 @@ p {
     line-height: 1.7rem;
 }
 
-/* List items */
+
+/* Lists */
+ul {
+    padding: 0;
+}
+
 li {
     list-style: none;
 }
+
+
+/* Images */
+img {
+    border-radius: 6px;
+}
+
 
 /* General classes */
 .wrapper {
@@ -40,7 +54,13 @@ li {
     text-align: center;
 }
 
-/* Images */
-img {
-    border-radius: 6px;
+.section-title {
+    font-size: $larger;
+    margin: 3rem 0 1.5rem 0;
+}
+
+.sub-title {
+    font-size: $medium;
+    margin: 0.6rem 0;
+    text-align: left;
 }
