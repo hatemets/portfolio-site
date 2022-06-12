@@ -1,5 +1,3 @@
-import "../styles/index.scss"
-import "../styles/Home.scss"
 import profilePic from "../media/images/profilepic.jpg"
 import Hobbies from "../components/Hobbies"
 import Skills from "../components/Skills"

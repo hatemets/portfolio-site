@@ -1,4 +1,9 @@
 @import "./_variables.scss";
+@import "./Footer.scss";
+@import "./Hobbies.scss";
+@import "./Skills.scss";
+@import "./Home.scss";
+
 
 .links > a {
     padding: 3vh 2vw;
@@ -7,9 +12,10 @@
 }
 
 #nav {
+    position: fixed;
     background-color: $darker;
     width: 100vw;
-    height: 10vh;
+    height: $navbarHeight;
     display: flex;
     justify-content: space-between;
 

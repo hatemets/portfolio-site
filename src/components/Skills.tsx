@@ -1,7 +1,3 @@
-import "../styles/index.scss"
-import "../styles/Skills.scss"
-
-
 const Skills = () => {
     return (
         <div id="skills">
