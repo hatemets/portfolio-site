@@ -16,8 +16,21 @@ const Projects = () => {
                         "Course project",
                         "One of the two developers",
                         "OOP design",
-                        "Complies with RAII principle",
+                        "Follows the RAII principle",
                         "Various levels, turrets & enemies"
+                    ]}
+                    githubLink="https://github.com/hatemets/tower-defense-game"
+                />
+
+                <ProjectCard
+                    title="Tennis prediction with Machine Learning"
+                    src={towerDefensePic}
+                    technologies={["Python", "Jupyter Notebook", "Sci-kit", "Numpy", "csv"]}
+                    details={[
+                        "Implemented several ML methods",
+                        ["Logistic Regression", "SVM", "Decision Tree", "K-nearest neighbors"],
+                        "Analyzed 400,000+ ATP matches",
+                        "Final accuracy of 69.3%"
                     ]}
                     githubLink="https://github.com/hatemets/tower-defense-game"
                 />

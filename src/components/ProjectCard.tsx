@@ -13,7 +13,11 @@ const ProjectCard = ({ title, src, technologies, details, githubLink }) => {
                 <div className="general-details">
                     <ul className="details-list">
                         {
-                            details.map((info: string) => <li>{ info }</li>)
+                            details.map((info: (string | string[])) =>
+                                        (typeof info === "string")
+                                            ? <li>{ info }</li>
+                                            : <ul className="sub-list">{ info.map((el: string) => <li>{ el }</li>)}</ul>
+                                       )
                         }
                     </ul>
                 </div>
