@@ -7,8 +7,8 @@ form#contact-form {
     justify-content: center;
     
     > div {
+        width: 100%;
         flex-grow: 1;
-        // border: 2px solid green;
         padding: 0;
         margin: 1rem 0;
 
@@ -19,15 +19,23 @@ form#contact-form {
             margin: 0.5rem 0 1rem 0;
         }
 
+
         input, textarea {
             border: 0;
             background-color: $semidark;
             border-radius: $borderRadius;
             color: $light;
             height: 2.5rem;
-            width: 70vw;
+            width: 100%;
             font-size: 1.1rem;
-            padding: 0.4rem 0.8rem;
+            display: block;
+            padding: 1.6rem $inputHorizontalPadding;
+            margin: 0;
+        }
+
+        textarea {
+            height: 30vh;
+            padding: $inputHorizontalPadding;
         }
 
         button[type="submit"] {

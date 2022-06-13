@@ -13,8 +13,8 @@ const ContactForm = () => {
         await event.preventDefault()
 
         try {
-            // await emailjs.sendForm(serviceID, templateID, form.current, publicKey)
-            // alert("Mail sent successfully!")
+            await emailjs.sendForm(serviceID, templateID, form.current, publicKey)
+            alert("Mail sent successfully!")
             console.log("success")
         }
         catch (err) {
@@ -27,16 +27,16 @@ const ContactForm = () => {
     return (
         <form id="contact-form" ref={form} onSubmit={sendEmail}>
             <div>
-                <label>Name</label>
-                <input type="text" name="user_name" required />
+                <label htmlFor="name">Name</label>
+                <input type="text" id="name" name="user_name" required />
             </div>
             <div>
-                <label>Email</label>
-                <input type="email" name="user_email" required />
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" name="user_email" required />
             </div>
             <div>
-                <label>Message</label>
-                <textarea name="message" required ></textarea>
+                <label htmlFor="message">Message</label>
+                <textarea name="message" id="message" required ></textarea>
             </div>
             <div>
                 <button type="submit">Send message</button>

@@ -5,4 +5,22 @@
         font-size: $extraLarge;
         text-align: center;
     }
+
+    ul#media {
+        li {
+            margin: 1rem 0;
+            display: flex;
+            justify-content: center;
+
+            a {
+                display: flex;
+                align-items: center;
+                width: 50vw;
+
+                p {
+                    margin: 0 1rem;
+                }
+            }
+        }
+    }
 }
