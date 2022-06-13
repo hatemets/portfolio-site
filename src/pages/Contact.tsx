@@ -2,6 +2,9 @@ import ContactForm from "../components/ContactForm"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons"
 import { faGithubSquare, faLinkedin, faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
+import { ToastContainer, toast } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css'
+
 
 const Contact = () => {
     const size = "3x"
@@ -12,13 +15,20 @@ const Contact = () => {
             try {
                 await event.preventDefault();
                 await navigator.clipboard.writeText(email)
-                alert("Email copied to clipboard!")
+
+                toast.success("Email copied to clipboard!", {
+                    position: "top-center",
+                    autoClose: 1500,
+                    hideProgressBar: true,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                })
             }
             catch (err) {
                 alert("Something went wrong!")
             }
         }
-        // TODO: Add popup msg "Email copied to clipboard!"
     }
 
     return (
@@ -30,7 +40,7 @@ const Contact = () => {
 
                 <div className="breakline" />
 
-                <h3 className="sub-title">You can also reach me via the following media</h3>
+                <h3 className="sub-title">You can also reach me via the following platforms:</h3>
 
                 <ul id="media">
                     <li>
@@ -61,6 +71,17 @@ const Contact = () => {
                     </li>
                 </ul>
             </div>
+            <ToastContainer
+                theme="dark"
+                position="top-center"
+                autoClose={1000}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss={false}
+                draggable
+                pauseOnHover
+            />
         </div>
     )
 }

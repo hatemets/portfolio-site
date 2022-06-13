@@ -1,9 +1,12 @@
-import React, { useRef } from "react"
+import { useRef } from "react"
 import emailjs from "@emailjs/browser"
+import { toast } from "react-toastify"
+
 
 const serviceID: string = process.env.REACT_APP_SERVICE_ID
 const templateID: string = process.env.REACT_APP_TEMPLATE_ID
 const publicKey: string = process.env.REACT_APP_PUBLIC_KEY
+
 
 // NB! .env must exist with the mentioned values
 const ContactForm = () => {
@@ -13,9 +16,20 @@ const ContactForm = () => {
         await event.preventDefault()
 
         try {
+            // Send the email
             await emailjs.sendForm(serviceID, templateID, form.current, publicKey)
-            alert("Mail sent successfully!")
-            console.log("success")
+
+            toast.success("Mail sent successfully!", {
+                position: "top-center",
+                autoClose: 4000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+            })
+
+            // Reset the fields
+            await event.target.reset()
         }
         catch (err) {
             alert("There was an error with sending the form.")

@@ -8,6 +8,8 @@
 @import "./ContactForm.scss";
 @import "./Projects.scss";
 @import "./Sidebar.scss";
+@import "./ProjectCard.scss";
+
 
 *, *:before, *:after {
     -moz-box-sizing: border-box;
@@ -54,7 +56,9 @@ a {
 /* Regular text */
 p {
     line-height: 1.7rem;
+    text-align: left;
 }
+
 
 
 /* Lists */
@@ -81,6 +85,10 @@ img {
     text-align: center;
 }
 
+.regular-text {
+    font-size: $regular;
+}
+
 .section-title {
     font-size: $larger;
     margin: 3rem 0 1.5rem 0;
@@ -98,6 +106,12 @@ img {
     margin: 3rem auto;
     padding: 0;
     background-color: $grey;
+}
+
+a.regular-link {
+    color: #b2abf8;
+    font-size: initial;
+    text-decoration: underline;
 }
 
 
