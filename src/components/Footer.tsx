@@ -8,15 +8,15 @@ const Footer = () => {
     return (
         <footer id="footer">
             <a href="mailto:heidmetsmark@gmail.com">
-                <FontAwesomeIcon id="email" size={size} icon={faEnvelope} />
+                <FontAwesomeIcon className="icon email-icon" size={size} icon={faEnvelope} />
             </a>
 
             <a href="https://github.com/hatemets">
-                <FontAwesomeIcon id="github" size={size} icon={faGithub} />
+                <FontAwesomeIcon className="icon github-icon" size={size} icon={faGithub} />
             </a>
 
-            <a id="linkedin-link" href="https://www.linkedin.com/in/mark-heidmets-969006195/">
-                <FontAwesomeIcon id="linkedin" size={size} icon={faLinkedin} />
+            <a className="linkedin-link" href="https://www.linkedin.com/in/mark-heidmets-969006195/">
+                <FontAwesomeIcon className="icon linkedin-icon" size={size} icon={faLinkedin} />
             </a>
         </footer>
     )

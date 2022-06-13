@@ -30,7 +30,8 @@ const Contact = () => {
 
                 <div className="breakline" />
 
-                <h3 className="sub-title">Feel free to also reach me via the following media</h3>
+                <h3 className="sub-title">You can also reach me via the following media</h3>
+
                 <ul id="media">
                     <li>
                         <a href="mailto:heidmetsmark@gmail.com">
@@ -47,13 +48,13 @@ const Contact = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/mark-heidmets-969006195/">
+                        <a className="linkedin-link" href="https://www.linkedin.com/in/mark-heidmets-969006195/">
                             <FontAwesomeIcon className="icon linkedin-icon" size={size} icon={faLinkedin} />
                             <p>LinkedIn</p>
                         </a>
                     </li>
                     <li>
-                        <a href="https://facebook.com/hatemets">
+                        <a className="facebook-link" href="https://facebook.com/hatemets">
                             <FontAwesomeIcon className="icon facebook-icon" size={size} icon={faFacebookSquare} />
                             <p>Facebook</p>
                         </a>

@@ -92,7 +92,16 @@ img {
     text-align: left;
 }
 
-// Icons
+.breakline {
+    width: 70vw;
+    height: 1px;
+    margin: 3rem auto;
+    padding: 0;
+    background-color: $grey;
+}
+
+
+/* Icons */
 .icon {
     transform: scale(1.15);
     margin: 0.25rem 0;
@@ -108,21 +117,21 @@ img {
 
 .linkedin-icon {
     color: #0072b1;
-    // border: 1px white solid;
     padding: 0;
 
-    &:before {
-
-    }
-}
-
-.breakline {
-    width: 80vw;
-    height: 1px;
-    margin: 3rem auto;
-    background-color: $grey;
 }
 
 .github-icon {
     color: $light;
+}
+
+a.linkedin-link, a.facebook-link {
+    &:before {
+        content: "";   
+        background-color: $light;
+        position: absolute;
+        width: 63px;
+        height: 67px;
+        border-radius: 12px;
+    }
 }

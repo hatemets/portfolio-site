@@ -11,11 +11,12 @@
             margin: 1rem 0;
             display: flex;
             justify-content: left;
+            position: relative;
 
             a {
                 display: flex;
                 align-items: center;
-                margin-left: 2rem;
+                margin-left: 0.5rem;
 
                 #email-box {
                     margin-left: 1rem;
