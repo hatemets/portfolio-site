@@ -1,6 +1,6 @@
 form#contact-form {
-    border: 2px white solid;
-    width: 100vw;
+    // border: 2px white solid;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,10 +12,6 @@ form#contact-form {
         padding: 0;
         margin: 1rem 0;
 
-        > * {
-            // border: 1px white dashed;
-        }
-
         label {
             font-size: $medium;
             display: block;
@@ -23,17 +19,33 @@ form#contact-form {
             margin: 0.5rem 0 1rem 0;
         }
 
-        input {
+        input, textarea {
             border: 0;
-            // background-color: $semidark;
-            background-color: transparent;
-            // border-radius: $borderRadius;
+            background-color: $semidark;
+            border-radius: $borderRadius;
             color: $light;
             height: 2.5rem;
-            width: 80vw;
+            width: 70vw;
             font-size: 1.1rem;
             padding: 0.4rem 0.8rem;
-            border-bottom: white solid 2px;
         }
+
+        button[type="submit"] {
+            background-color: $dark;
+            padding: 1rem 1.4rem;
+            border-radius: $borderRadius;
+            font-size: $regular;
+            font-weight: bold;
+            color: $light;
+            border: 1px solid $light;
+            cursor: pointer;
+
+            &:hover {
+                transition: background-color $transitionTime;
+                background-color: $light;
+                color: $dark;
+            }
+        }
+
     }
 }
