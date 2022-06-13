@@ -149,3 +149,19 @@ a.linkedin-link, a.facebook-link {
         border-radius: 12px;
     }
 }
+
+
+/* Mixins */
+@mixin bullets {
+    text-align: left;
+    margin: 0.4rem 0;
+    font-size: 1.05rem;
+
+    &:before {
+        color: orange;
+        font-weight: 900;
+        display: inline-block;
+        width: 1rem;
+        content: "\2022";
+    }
+}

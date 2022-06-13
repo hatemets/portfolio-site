@@ -7,16 +7,18 @@ const Projects = () => {
         <div id="projects">
             <div className="wrapper">
                 <h1>Projects</h1>
-                {/* <p className="regular-text"> */}
-                {/*     Here are some of the projects I've been working on. */}
-                {/*     To see all of my repositories, visit my <a className="regular-link" href="https://github.com/hatemets">GitHub page</a>. */}
-                {/* </p> */}
 
                 <ProjectCard
                     title="Tower Defense Game"
                     src={towerDefensePic}
                     technologies={["C++", "SFML", "Makefile"]}
-                    details={["Course project", "One of the two developers"]}
+                    details={[
+                        "Course project",
+                        "One of the two developers",
+                        "OOP design",
+                        "Complies with RAII principle",
+                        "Various levels, turrets & enemies"
+                    ]}
                     githubLink="https://github.com/hatemets/tower-defense-game"
                 />
 
