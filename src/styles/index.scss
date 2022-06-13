@@ -93,4 +93,36 @@ img {
 }
 
 // Icons
+.icon {
+    transform: scale(1.15);
+    margin: 0.25rem 0;
+}
 
+.email-icon {
+    color: $light;
+}
+
+.facebook-icon {
+    color: #4267b2;
+}
+
+.linkedin-icon {
+    color: #0072b1;
+    // border: 1px white solid;
+    padding: 0;
+
+    &:before {
+
+    }
+}
+
+.breakline {
+    width: 80vw;
+    height: 1px;
+    margin: 3rem auto;
+    background-color: $grey;
+}
+
+.github-icon {
+    color: $light;
+}

@@ -10,15 +10,29 @@
         li {
             margin: 1rem 0;
             display: flex;
-            justify-content: center;
+            justify-content: left;
 
             a {
                 display: flex;
                 align-items: center;
-                width: 50vw;
+                margin-left: 2rem;
+
+                #email-box {
+                    margin-left: 1rem;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: left;
+                    cursor: pointer;
+                    
+                    p {
+                        margin: 0;
+                    }
+                }
 
                 p {
                     margin: 0 1rem;
+                    font-size: $regular;
                 }
             }
         }
