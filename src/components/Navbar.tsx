@@ -2,17 +2,27 @@ import { Link } from "react-router-dom"
 import "../styles/Navbar.scss"
 import InitialsLogo from "../components/InitialsLogo"
 import SideMenuIcon from "../components/SideMenuIcon"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Sidebar from "../components/Sidebar"
 
 
 const Navbar = () => {
     const [isOpen, setOpen] = useState(false)
 
+    useEffect(() => {
+        // Disable scrolling while sidemenu is open
+        if (isOpen) {
+            window.document.body.style["overflow"] = "hidden"
+        }
+        else {
+            window.document.body.style["overflow"] = "auto"
+        }
+    }, [isOpen])
+
     return (
         <>
             <nav id="nav">
-                <Link to="/" id="logo-link">
+                <Link onClick={() => setOpen(false)} to="/" id="logo-link">
                     <InitialsLogo />
                 </Link>
 

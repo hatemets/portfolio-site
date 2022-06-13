@@ -5,19 +5,21 @@ import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
-
+import ScrollWrapper from "./components/ScrollWrapper"
 
 const App = () => {
     return (
         <div id="App">
             <Router>
-                <Navbar />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/contact" element={<Contact />} />
-                    <Route path="/projects" element={<Projects />} />
-                </Routes>
-                <Footer />
+                <ScrollWrapper>
+                    <Navbar />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/projects" element={<Projects />} />
+                    </Routes>
+                    <Footer />
+                </ScrollWrapper>
             </Router>
         </div>
     )
