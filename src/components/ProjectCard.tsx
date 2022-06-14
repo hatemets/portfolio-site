@@ -23,7 +23,7 @@ const ProjectCard = ({ title, src, technologies, details, githubLink }) => {
                 </div>
 
                 <div className="technical-info">
-                    <a className="git-container" href={githubLink}>
+                    <a target="_blank" className="git-container" href={githubLink}>
                         <FontAwesomeIcon className="icon github-icon" size="2x" icon={faGithub} />
                         <p>Source</p>
                     </a>

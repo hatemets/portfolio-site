@@ -1,5 +1,7 @@
 import ProjectCard from "../components/ProjectCard"
 import towerDefensePic from "../media/images/tower_defense_showcase.png"
+import tennisPredictionPic from "../media/images/tennis_prediction_plots.png"
+import personalWebsitePic from "../media/images/personal_website.png"
 
 
 const Projects = () => {
@@ -24,15 +26,29 @@ const Projects = () => {
 
                 <ProjectCard
                     title="Tennis prediction with Machine Learning"
-                    src={towerDefensePic}
-                    technologies={["Python", "Jupyter Notebook", "Sci-kit", "Numpy", "csv"]}
+                    src={tennisPredictionPic}
+                    technologies={["Python", "Jupyter", "Sci-kit", "Numpy"]}
                     details={[
-                        "Implemented several ML methods",
+                        "ML methods used:",
                         ["Logistic Regression", "SVM", "Decision Tree", "K-nearest neighbors"],
                         "Analyzed 400,000+ ATP matches",
                         "Final accuracy of 69.3%"
                     ]}
-                    githubLink="https://github.com/hatemets/tower-defense-game"
+                    githubLink="https://github.com/hatemets/tennis-prediction"
+                />
+
+                <ProjectCard
+                    title="Personal Website"
+                    src={personalWebsitePic}
+                    technologies={["HTML/JSX", "CSS/SASS", "JavaScript", "TypeScript", "React"]}
+                    details={[
+                        "Custom styling with SASS",
+                        "Uses React Hooks",
+                        "Type checking with TypeScript",
+                        "Integrated emailing API",
+                        "Search Engine Optimization"
+                    ]}
+                    githubLink="https://github.com/hatemets/tennis-prediction"
                 />
 
             </div>
