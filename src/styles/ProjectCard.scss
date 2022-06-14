@@ -52,7 +52,7 @@
                 height: fit-content;
 
                 li {
-                    @include colored-list-items(orange);
+                    @include colored-list-items($mainOrange);
 
                     margin: 0.5rem 0;
                     text-align: left;

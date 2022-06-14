@@ -83,7 +83,7 @@
 
                 ul.sub-list {
                     li {
-                        @include colored-list-items(darkorange);
+                        @include colored-list-items($mainOrange);
                     }
                 }
             }

@@ -4,6 +4,7 @@
 #nav {
     position: fixed;
     height: $navbarHeight !important;
+    min-height: 70px;
     overflow: hidden;
     top: 0;
     background-color: $darker;
@@ -38,8 +39,16 @@
 
         a {
             padding: 3vh 2vw;
-            font-size: 1.4rem;
+            font-size: $medium;
             margin: 0 1vw;
+
+            &:hover {
+                color: $mainOrange;
+            }
+
+            @include md {
+                font-size: $semilarge;
+            }
         }
     }
 
