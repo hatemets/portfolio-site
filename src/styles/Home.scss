@@ -1,27 +1,98 @@
 @import "./variables";
 
 #home {
-    #greeting-title {
-        font-size: 2.3rem;
-    }
+    div.wrapper {
+        @include md {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-areas:
+            "main-title main-title main-title main-title"
+            "img img greeting greeting"
+            "img img site-paragraph site-paragraph"
+            "about-title about-title about-title about-title"
+            "about-text about-text about-text about-text";
+            grid-gap: 1rem;
+            max-width: 80vw;
+            padding-bottom: 2rem;
 
-    img#profile-pic {
-        margin: $edgeBuffer 0;
-        width: 100%;
-
-        @include lg {
-            max-width: 500px;
+            * {
+                margin: 0;
+            }
         }
-    }
 
-    .greeting-text {
-        font-weight: 700;
-        font-size: 1.4rem;
-        margin-top: 0;
-    }
+        @include xl {
+            max-width: 1100px;
+        }
 
-    h3#about-me {
-        margin-bottom: 0;
-        font-size: $largest;
+        h1#greeting-title {
+            grid-area: main-title;
+            font-size: $extraLarge;
+
+            @include md {
+                font-size: $huge;
+                margin: 1rem 0;
+            }
+
+            @include lg {
+                margin: 2rem 0;
+            }
+        }
+
+        img#profile-pic {
+            grid-area: img;
+            width: 100%;
+        }
+
+        p.greeting-text {
+            grid-area: greeting;
+            display: block;
+            width: 100%;
+            font-weight: 700;
+            font-size: $large;
+
+            @include lg {
+                width: 90%;
+                font-size: $largest;
+                line-height: 2.8rem;
+                margin: auto;
+            }
+        }
+
+
+        p#website-paragraph {
+            grid-area: site-paragraph;
+
+            @include lg {
+                font-size: $medium;
+                width: 90%;
+                margin: auto;
+            }
+        }
+
+
+        h3#about-me {
+            grid-area: about-title;
+            margin-bottom: 0;
+            font-size: $largest;
+
+            @include md {
+                font-size: $extraLarge;
+                margin: 2rem 0 1rem 0;
+            }
+        }
+
+
+        p#about-me-text {
+            grid-area: about-text;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include md {
+                margin: auto;
+                font-size: $medium;
+                line-height: 2rem;
+            }
+        }
     }
 }

@@ -43,7 +43,7 @@ const Projects = () => {
                     technologies={["HTML/JSX", "CSS/SASS", "JavaScript", "TypeScript", "React"]}
                     details={[
                         "Built with React Hooks",
-                        "Custom styling with SASS",
+                        "Responsive design",
                         "Type checking with TypeScript",
                         "Integrated emailing API",
                         "Search Engine Optimization"

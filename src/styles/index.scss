@@ -1,5 +1,6 @@
 @import "./_mixins.scss";
 @import "./_variables.scss";
+@import "./_classes.scss";
 @import "./Footer.scss";
 @import "./Hobbies.scss";
 @import "./Skills.scss";
@@ -77,43 +78,6 @@ img {
     border-radius: 6px;
 }
 
-
-/* General classes */
-.wrapper {
-    margin: 0 $edgeBuffer;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.regular-text {
-    font-size: $regular;
-}
-
-.section-title {
-    font-size: $larger;
-    margin: 3rem 0 1.5rem 0;
-}
-
-.sub-title {
-    font-size: $medium;
-    margin: 0.6rem 0;
-    text-align: left;
-}
-
-.breakline {
-    width: 70vw;
-    height: 1px;
-    margin: 3rem auto;
-    padding: 0;
-    background-color: $grey;
-}
-
-a.regular-link {
-    color: #b2abf8;
-    font-size: initial;
-    text-decoration: underline;
-}
 
 
 /* Icons */
