@@ -42,13 +42,13 @@ const Projects = () => {
                     src={personalWebsitePic}
                     technologies={["HTML/JSX", "CSS/SASS", "JavaScript", "TypeScript", "React"]}
                     details={[
+                        "Built with React Hooks",
                         "Custom styling with SASS",
-                        "Uses React Hooks",
                         "Type checking with TypeScript",
                         "Integrated emailing API",
                         "Search Engine Optimization"
                     ]}
-                    githubLink="https://github.com/hatemets/tennis-prediction"
+                    githubLink="https://github.com/hatemets/portfolio-site"
                 />
 
             </div>

@@ -81,7 +81,15 @@
                 border-radius: $borderRadius;
                 width: 100%;
                 margin-top: 0.6rem;
+                transition: background-color $transitionTime;
 
+                &:hover {
+                    background-color: $light;
+
+                    * {
+                        color: $dark;
+                    }
+                }
 
                 .icon {
                     transform: scale(0.9);

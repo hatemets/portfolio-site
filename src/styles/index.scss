@@ -165,3 +165,9 @@ a.linkedin-link, a.facebook-link {
         content: "\2022";
     }
 }
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+}
