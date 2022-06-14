@@ -1,11 +1,5 @@
-@import "./_variables.scss";
-
-
-.links > a {
-    padding: 3vh 2vw;
-    font-size: 1.4rem;
-    margin: 0 1vw;
-}
+@import "_variables.scss";
+@import "mixins";
 
 #nav {
     position: fixed;
@@ -18,6 +12,10 @@
     justify-content: space-between;
     z-index: 2;
 
+    @include lg {
+        height: $navbarHeightLarge !important;
+    }
+
     #logo-link {
         margin-left: 4vw;
         display: flex;
@@ -27,12 +25,22 @@
         #logo {
             display: flex;
             align-items: center;
+
+            @include lg {
+                transform: scale(1.3);
+            }
         }
     }
 
     .links {
         display: flex;
         align-items: center;
+
+        a {
+            padding: 3vh 2vw;
+            font-size: 1.4rem;
+            margin: 0 1vw;
+        }
     }
 
     #menu-icon {
@@ -52,7 +60,7 @@
         }
 
         #menu-icon {
-           display: initial;
+            display: initial;
             margin-right: 5vw;
             cursor: pointer;
             z-index: 1;

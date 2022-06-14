@@ -11,12 +11,7 @@ const Navbar = () => {
 
     useEffect(() => {
         // Disable scrolling while sidemenu is open
-        if (isOpen) {
-            window.document.body.style["overflow"] = "hidden"
-        }
-        else {
-            window.document.body.style["overflow"] = "auto"
-        }
+        window.document.body.style["overflow"] = (isOpen) ? "hidden" : "auto"
     }, [isOpen])
 
     return (

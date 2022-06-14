@@ -64,9 +64,12 @@
 
             @include lg {
                 width: 90%;
-                font-size: $largest;
                 line-height: 2.8rem;
                 margin: auto;
+            }
+
+            @include xl {
+                font-size: $largest;
             }
         }
 
@@ -75,9 +78,12 @@
             grid-area: site-paragraph;
 
             @include lg {
-                font-size: $medium;
                 width: 90%;
                 margin: auto;
+                font-size: $medium;
+            }
+
+            @include xl {
             }
         }
 

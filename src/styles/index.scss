@@ -5,12 +5,12 @@
 @import "./Hobbies.scss";
 @import "./Skills.scss";
 @import "./Home.scss";
-@import "./Navbar.scss";
 @import "./Contact.scss";
 @import "./ContactForm.scss";
 @import "./Projects.scss";
 @import "./Sidebar.scss";
 @import "./ProjectCard.scss";
+@import "./Navbar.scss";
 
 
 *, *:before, *:after {
@@ -44,6 +44,10 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: $dark;
     width: 100vw;
     color: $light;
+    
+    @include lg {
+        margin-top: $navbarHeightLarge;
+    }
 }
 
 
