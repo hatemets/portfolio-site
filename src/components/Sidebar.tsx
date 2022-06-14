@@ -7,7 +7,7 @@ const SideBar = ({ isOpen, setOpen }) => {
         <div style={{ display }} id="sidebar">
             <div className="container">
                 <Link onClick={() => setOpen(false)} to="/">Home</Link>
-                <Link onClick={() => setOpen(false)} to="/contact">Contact</Link>
+                <Link onClick={() => setOpen(false)} to="/contact">Contact Me</Link>
                 <Link onClick={() => setOpen(false)} to="/projects">Projects</Link>
             </div>
         </div>
