@@ -6,7 +6,7 @@ const Skills = () => {
             <ul className="list">
                 <li id="webdev">
                     <h6 className="sub-title">Web development</h6>
-                    <ul className="sub-list" id="two-column">
+                    <ul className="sub-list">
                         <li>HTML</li>
                         <li>CSS & SASS</li>
                         <li>JavaScript</li>

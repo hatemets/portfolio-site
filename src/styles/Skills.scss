@@ -48,29 +48,51 @@
                 margin: 0 auto;
             }
 
+            &#webdev {
+                ul.sub-list {
+                    grid-template-columns: repeat(2, 1fr);
+
+                    @include md {
+                        grid-template-columns: repeat(1, 1fr);
+                    }
+
+                    @include lg {
+                        width: fit-content;
+                        grid-column-gap: 4rem;
+                        margin: auto;
+                    }
+
+                    li {
+                        @include colored-list-items(lightblue);
+                    }
+                }
+            }
+
+            &#linux {
+                ul.sub-list {
+                    li {
+                        @include colored-list-items(forestgreen);
+                    }
+                }
+            }
+
             &#other {
                 h6 {
                     text-align: left;
                 }
+
+                ul.sub-list {
+                    li {
+                        @include colored-list-items(darkorange);
+                    }
+                }
             }
+
 
             h6.sub-title {
                 margin: 1rem 0;
             }
 
-            ul#two-column.sub-list {
-                grid-template-columns: repeat(2, 1fr);
-
-                @include lg {
-                    width: fit-content;
-                    grid-column-gap: 4rem;
-                    margin: auto;
-                }
-
-                @include md {
-                    grid-template-columns: repeat(1, 1fr);
-                }
-            }
 
             .sub-title {
                 font-size: $large;
@@ -85,8 +107,6 @@
                     text-align: left;
                     margin: 0.4rem 0;
                     font-size: $regular;
-
-                    @include colored-list-items(darkorange);
                 }
             }
         }
