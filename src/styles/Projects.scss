@@ -3,5 +3,13 @@
         h1.page-title {
             margin-bottom: 3rem;
         }
+
+        @include sm {
+            max-width: 90vw !important;
+        }
+
+        @include md {
+            max-width: 750px !important;
+        }
     }
 }

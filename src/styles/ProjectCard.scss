@@ -15,6 +15,21 @@
         margin-bottom: 1rem;
     }
 
+    @include md {
+        h3.technologies-title {
+            font-size: $large;
+        }
+
+        li {
+            font-size: $medium;
+        }
+
+        h1.project-title {
+            font-size: $largest;
+            margin: 2rem 0;
+        }
+    }
+
     div.details {
         display: flex;
 
@@ -63,7 +78,7 @@
             a.git-container {
                 display: flex;
                 align-items: center;
-                justify-content: space-around;
+                justify-content: center;
                 border: 1px solid $light;
                 border-radius: $borderRadius;
                 width: 100%;
@@ -80,11 +95,28 @@
 
                 .icon {
                     transform: scale(0.9);
+                    margin-right: 0.6rem;
                 }
 
                 p {
                     text-align: center;
                     font-size: $regular;
+                }
+
+                @include sm {
+                    max-width: 80%;
+
+                    p {
+                        font-size: $medium;     
+                    }
+                }
+
+                @include md {
+                    max-width: 60%;
+
+                    .icon {
+                        transform: scale(1);
+                    }
                 }
             }
 
