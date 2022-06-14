@@ -1,7 +1,7 @@
 import ProjectCard from "../components/ProjectCard"
 import towerDefensePic from "../media/images/tower_defense_showcase.png"
 import tennisPredictionPic from "../media/images/tennis_prediction_plots.png"
-import personalWebsitePic from "../media/images/personal_website.png"
+import personalWebsitePic from "../media/images/personal_website_img.png"
 
 
 const Projects = () => {

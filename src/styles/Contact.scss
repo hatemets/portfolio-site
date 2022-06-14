@@ -17,6 +17,10 @@
 
         h3.sub-title {
             text-align: center;
+
+            @include md {
+                font-size: $large;
+            }
         }
 
         ul#media {
@@ -35,8 +39,9 @@
                     padding-left: 10%;
 
                     @include md {
-                        padding-left: 25%;
                         text-align: center;
+                        transform: scale(1.2);
+                        padding: 1rem 0 1rem 25%;
                     }
 
                     @include xl {

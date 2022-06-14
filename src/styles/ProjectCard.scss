@@ -2,8 +2,12 @@
     background-color: $semidark;
     border-radius: $borderRadius;
     width: 100%;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     margin-bottom: 5rem;
+
+    @include sm {
+        padding-bottom: 3rem;
+    }
 
     .project-title {
         font-size: $larger;
@@ -63,6 +67,10 @@
                         margin: 0.5rem 0;
                         text-align: left;
                     }
+                }
+
+                @include sm {
+                    margin: auto;
                 }
             }
         }

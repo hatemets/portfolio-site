@@ -6,21 +6,21 @@
     text-align: center;
 
     @include sm {
-        border: 5px solid grey;
         max-width: 80vw;
         margin: 0 auto;
+        // border: 5px solid grey;
     }
     
     @include md {
-        border: 5px solid green;
+        // border: 5px solid green;
     }
 
     @include lg {
-        border: 5px solid orange;
+        // border: 5px solid orange;
     }
 
     @include xl {
-        border: 5px solid red;
+        // border: 5px solid red;
         max-width: 60vw;
     }
 }
