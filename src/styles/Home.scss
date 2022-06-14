@@ -5,9 +5,13 @@
         font-size: 2.3rem;
     }
 
-    #profile-pic {
+    img#profile-pic {
         margin: $edgeBuffer 0;
         width: 100%;
+
+        @include lg {
+            max-width: 500px;
+        }
     }
 
     .greeting-text {
@@ -20,5 +24,4 @@
         margin-bottom: 0;
         font-size: $largest;
     }
-
 }
