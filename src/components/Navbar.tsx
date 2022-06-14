@@ -30,8 +30,8 @@ const Navbar = () => {
 
                 <div className="links">
                     <Link to="/">Home</Link>
-                    <Link to="/contact">Contact Me</Link>
                     <Link to="/projects">Projects</Link>
+                    <Link to="/contact">Contact</Link>
                 </div>
             </nav>
             <Sidebar isOpen={isOpen} setOpen={setOpen} />

@@ -16,7 +16,12 @@
             "skills skills skills skills"
             "skills skills skills skills"
             "skills skills skills skills"
-            "skills skills skills skills";
+            "skills skills skills skills"
+            // Hobbies
+            "hobbies hobbies hobbies hobbies"
+            "hobbies hobbies hobbies hobbies"
+            "hobbies hobbies hobbies hobbies"
+            "hobbies hobbies hobbies hobbies";
 
             grid-gap: 1rem;
             max-width: 80vw;
@@ -103,7 +108,11 @@
         }
 
         #skills {
-            grid-area: skills
+            grid-area: skills;
+        }
+
+        #hobbies {
+            grid-area: hobbies;
         }
     }
 }

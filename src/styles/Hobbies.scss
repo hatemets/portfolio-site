@@ -1,7 +1,50 @@
 @import "./variables";
 
 #hobbies {
-    ul {
+    p.list-text {
+        font-size: $regular;
+    }
+
+    @include md {
+        h4.section-title#hobbies-title {
+            margin: 4rem 0 2rem 0;
+            font-size: $largest;
+        }
+
+        ul.hobbies-list {
+            display: grid;
+            grid-template-areas:
+            "sports unix"
+            "languages cycling";
+
+            li.hobbies-item {
+                padding: 0 1rem 0 0;
+
+                h6.sub-title {
+                    margin-bottom: 1rem;
+                    font-size: $large;
+                }
+            }
+
+            #sports {
+                grid-area: sports;
+            }
+
+            #unix {
+                grid-area: unix;
+            }
+
+            #languages {
+                grid-area: languages;
+            }
+
+            #cycling {
+                grid-area: cycling;
+            }
+        }
+    }
+
+    ul.hobbies-list {
         li.hobbies-item {
             margin-bottom: 3rem;
         }
