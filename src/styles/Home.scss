@@ -6,11 +6,18 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-areas:
+            // Main
             "main-title main-title main-title main-title"
             "img img greeting greeting"
             "img img site-paragraph site-paragraph"
             "about-title about-title about-title about-title"
-            "about-text about-text about-text about-text";
+            "about-text about-text about-text about-text"
+            // Skills
+            "skills skills skills skills"
+            "skills skills skills skills"
+            "skills skills skills skills"
+            "skills skills skills skills";
+
             grid-gap: 1rem;
             max-width: 80vw;
             padding-bottom: 2rem;
@@ -93,6 +100,10 @@
                 font-size: $medium;
                 line-height: 2rem;
             }
+        }
+
+        #skills {
+            grid-area: skills
         }
     }
 }

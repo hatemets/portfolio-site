@@ -1,9 +1,10 @@
 const Skills = () => {
     return (
         <div id="skills">
-            <h4 className="section-title">Skills & technologies</h4>
+            <h4 className="section-title" id="skills-title">Skills & technologies</h4>
+
             <ul className="list">
-                <li>
+                <li id="webdev">
                     <h6 className="sub-title">Web development</h6>
                     <ul className="sub-list" id="two-column">
                         <li>HTML</li>
@@ -20,7 +21,7 @@ const Skills = () => {
                     </ul>
                 </li>
 
-                <li>
+                <li id="linux">
                     <h6 className="sub-title">Linux & bash</h6>
                     <ul className="sub-list">
                         <li>Command line</li>
@@ -30,10 +31,11 @@ const Skills = () => {
                     </ul>
                 </li>
 
-                <li>
+                <li id="other">
                     <h6 className="sub-title">Other</h6>
                     <ul className="sub-list">
                         <li>C++</li>
+                        <li>Git</li>
                         <li>Python</li>
                         <li>Scala</li>
                         <li>SFML library</li>

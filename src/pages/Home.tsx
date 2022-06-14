@@ -26,7 +26,7 @@ const Home = () => {
                     I've been programming for 4 years and during that time, I've learned to create full-stack web apps, browser automating tools, video games, and machine learning models.
                 </p>
 
-                {/* <Skills /> */}
+                <Skills />
 
                 {/* <Hobbies /> */}
             </div>
