@@ -1,39 +1,65 @@
 @import "./variables";
 
 #contact {
-    .page-title {
-        font-size: $extraLarge;
-        text-align: center;
-    }
+    div.wrapper {
+        @include md {
+            max-width: 60vw;
 
-    ul#media {
-        li {
-            margin: 1rem 0;
-            display: flex;
-            justify-content: left;
-            position: relative;
+            div.breakline {
+                max-width: 40vw;
+                max-width: 500px;
+            }
+        }
 
-            a {
+        @include xl {
+            max-width: 600px;
+        }
+
+        h3.sub-title {
+            text-align: center;
+        }
+
+        ul#media {
+            li {
+                margin: 1rem 0;
                 display: flex;
-                align-items: center;
-                margin-left: 0.5rem;
+                justify-content: left;
+                width: 100%;
+                position: relative;
 
-                #email-box {
-                    margin-left: 1rem;
-                    height: 100%;
+                a {
                     display: flex;
                     align-items: center;
-                    justify-content: left;
-                    cursor: pointer;
-                    
-                    p {
-                        margin: 0;
-                    }
-                }
+                    margin-left: 0.5rem;
+                    width: 100%;
+                    padding-left: 10%;
 
-                p {
-                    margin: 0 1rem;
-                    font-size: $regular;
+                    @include md {
+                        padding-left: 25%;
+                        text-align: center;
+                    }
+
+                    @include xl {
+                        padding-left: 35%;
+                    }
+
+                    #email-box {
+                        margin-left: 1rem;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: left;
+                        cursor: pointer;
+
+                        p {
+                            margin: 0;
+                        }
+                    }
+
+                    p {
+                        margin: 0 1rem;
+                        font-size: $regular;
+                    }
                 }
             }
         }

@@ -8,7 +8,7 @@ const Projects = () => {
     return (
         <div id="projects">
             <div className="wrapper">
-                <h1>Projects</h1>
+                <h1 className="page-title">Projects</h1>
 
                 <ProjectCard
                     title="Tower Defense Game"
