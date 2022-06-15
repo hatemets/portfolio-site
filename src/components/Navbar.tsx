@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 import "../styles/Navbar.scss"
 import InitialsLogo from "../components/InitialsLogo"
-import SideMenuIcon from "../components/SideMenuIcon"
 import { useState, useEffect } from "react"
 import Sidebar from "../components/Sidebar"
 import { Spin as Hamburger } from "hamburger-react"
@@ -12,7 +11,6 @@ const Navbar = () => {
 
     useEffect(() => {
         // Disable scrolling while sidemenu is open
-        // console.log(variables)
         window.document.body.style["overflow"] = (isOpen) ? "hidden" : "auto"
     }, [isOpen])
 
@@ -23,7 +21,6 @@ const Navbar = () => {
                     <InitialsLogo />
                 </Link>
 
-                {/* <SideMenuIcon toggle={() => setOpen(!isOpen)} /> */}
                 <span id="menu-icon">
                     <Hamburger rounded size={40} color="#dedede" toggled={isOpen} toggle={setOpen} />
                 </span>
