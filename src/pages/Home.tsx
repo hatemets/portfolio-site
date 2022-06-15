@@ -1,4 +1,3 @@
-import profilePic from "../media/images/profilepic.jpg"
 import Hobbies from "../components/Hobbies"
 import Skills from "../components/Skills"
 import PuffLoader from "react-spinners/PuffLoader"
@@ -20,7 +19,7 @@ const Home = () => {
             <div className="wrapper">
                 <h1 id="greeting-title">Hey, I'm Mark.</h1>
 
-                <img id="profile-pic" src={profilePic} alt="Profile" />
+                <img id="profile-pic" src="/profilepic.jpg" alt="Profile" />
 
                 <p className="greeting-text">
                     I'm a data science student based in Finland.

@@ -1,7 +1,4 @@
 import ProjectCard from "../components/ProjectCard"
-import towerDefensePic from "../media/images/tower_defense_showcase.png"
-import tennisPredictionPic from "../media/images/tennis_prediction_plots.png"
-import personalWebsitePic from "../media/images/personal_website_img.png"
 
 
 const Projects = () => {
@@ -12,7 +9,7 @@ const Projects = () => {
 
                 <ProjectCard
                     title="Tower Defense Game"
-                    src={towerDefensePic}
+                    src="tower_defense_showcase.png"
                     technologies={["C++", "SFML", "Makefile"]}
                     details={[
                         "Course project",
@@ -26,7 +23,7 @@ const Projects = () => {
 
                 <ProjectCard
                     title="Tennis prediction with Machine Learning"
-                    src={tennisPredictionPic}
+                    src="tennis_prediction_plots.png"
                     technologies={["Python", "Jupyter", "Sci-kit", "Numpy"]}
                     details={[
                         "ML methods used:",
@@ -39,7 +36,7 @@ const Projects = () => {
 
                 <ProjectCard
                     title="Personal Website"
-                    src={personalWebsitePic}
+                    src="personal_website_img.png"
                     technologies={["HTML/JSX", "CSS/SASS", "JavaScript", "TypeScript", "React"]}
                     details={[
                         "Built with React Hooks",
