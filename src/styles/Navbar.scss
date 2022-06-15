@@ -66,11 +66,12 @@
 }
 
 
-// Phone
+/* Hamburger menu */
 @media screen and (max-width: 480px) {
     #nav {
         height: 12vh;
         align-items: center;
+        padding: 0 0.5rem;
 
         .links {
             display: none;
