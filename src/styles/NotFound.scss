@@ -1,0 +1,25 @@
+#not-found {
+    height: 100vh;
+
+    .wrapper {
+        margin-top: $navbarHeightLarge;
+
+        h3.message {
+            margin-top: 2rem;
+            font-size: $largest;
+        }
+
+        a.to-home {
+            @include md {
+                font-size: $larger;
+            }
+
+            color: $mainOrange;
+
+
+            &:hover {
+                color: orange;
+            }
+        }
+    }
+}
