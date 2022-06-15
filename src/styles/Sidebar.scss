@@ -1,3 +1,11 @@
+@keyframes slide-in {
+    from {
+        transform: rotate(20deg) scale(2);
+        opacity: 0;
+    }
+}
+
+
 #sidebar {
     background-color: $darker;
     width: 100vw;
@@ -15,13 +23,6 @@
         height: 100vh;
         margin: 0;
         padding: 0;
-
-        @keyframes slide-in {
-            from {
-                transform: rotate(20deg) scale(2);
-                opacity: 0;
-            }
-        }
 
         a {
             color: $light;
