@@ -42,8 +42,7 @@ const Projects = () => {
                         "Built with React Hooks",
                         "Responsive design",
                         "Type checking with TypeScript",
-                        "Integrated emailing API",
-                        "Search Engine Optimization"
+                        "Integrated emailing API"
                     ]}
                     githubLink="https://github.com/hatemets/portfolio-site"
                 />
