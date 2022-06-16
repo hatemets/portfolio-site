@@ -76,11 +76,12 @@
 
         p#website-paragraph {
             grid-area: site-paragraph;
+            font-size: $medium;
 
             @include lg {
                 width: 90%;
                 margin: auto;
-                font-size: $medium;
+                font-size: $semilarge;
             }
 
             @include xl {

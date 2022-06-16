@@ -1,19 +1,8 @@
 import Hobbies from "../components/Hobbies"
 import Skills from "../components/Skills"
-// import PuffLoader from "react-spinners/PuffLoader"
-// import { useState, useEffect } from "react"
 
 
 const Home = () => {
-    // const [loading, setLoading] = useState(true)
-
-    // useEffect(() => {
-        // const img = document.querySelector("#profile-pic") as HTMLImageElement
-        // img.onload = () => window.URL.revokeObjectURL(img.src)
-        // img.src = window.URL.createObjectURL(img.src)
-    // }, [])
-
-
     return (
         <div id="home">
             <div className="wrapper">
