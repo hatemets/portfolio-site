@@ -4,6 +4,13 @@ form#contact-form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    div#form-send-wrapper {
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
     > div {
         width: 100%;

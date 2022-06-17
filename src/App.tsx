@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import ScrollWrapper from "./components/ScrollWrapper"
 
+
 const App = () => {
     return (
         <div id="App">
