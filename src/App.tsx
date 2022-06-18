@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import Projects from "./pages/Projects"
@@ -10,6 +10,10 @@ import ScrollWrapper from "./components/ScrollWrapper"
 
 
 const App = () => {
+    useEffect(() => {
+        document.querySelector(".loader").classList.add("loader--hide")
+    })
+
     return (
         <div id="App">
             <Router>

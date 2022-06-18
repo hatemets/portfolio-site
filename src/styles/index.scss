@@ -105,7 +105,6 @@ img {
 .linkedin-icon {
     color: #0072b1;
     padding: 0;
-
 }
 
 .github-icon {
@@ -124,17 +123,11 @@ a.linkedin-link, a.facebook-link {
 }
 
 
-/* Mixins */
-@mixin bullets {
-    text-align: left;
-    margin: 0.4rem 0;
-    font-size: 1.05rem;
-
-    &:before {
-        color: $mainOrange;
-        font-weight: 900;
-        display: inline-block;
-        width: 1rem;
-        content: "\2022";
+@keyframes load8 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
