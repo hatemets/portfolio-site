@@ -10,10 +10,6 @@ import ScrollWrapper from "./components/ScrollWrapper"
 
 
 const App = () => {
-    useEffect(() => {
-        document.querySelector(".loader").classList.add("loader--hide")
-    })
-
     return (
         <div id="App">
             <Router>
