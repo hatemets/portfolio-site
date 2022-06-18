@@ -13,7 +13,7 @@
     justify-content: space-between;
     z-index: 2;
 
-    @include lg {
+    @include md {
         height: $navbarHeightLarge !important;
     }
 
@@ -54,7 +54,7 @@
                 color: $mainOrange;
             }
 
-            @include md {
+            @include lg {
                 font-size: $semilarge;
             }
         }
