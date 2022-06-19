@@ -1,18 +1,26 @@
 import Hobbies from "../components/Hobbies"
 import Skills from "../components/Skills"
+import { Helmet } from "react-helmet"
 
+const descriptionText = "I'm a data science student based in Finland. I love creating software ranging from video games to full-stack web applications."
 
 const Home = () => {
     return (
         <div id="home">
+            <Helmet>
+                <title>Home | Mark Heidmets</title>
+                <meta
+                    name="description"
+                    content={`My name's Mark Heidmets ${descriptionText}`}
+                />
+            </Helmet>
             <div className="wrapper">
                 <h1 id="greeting-title">Hey, I'm Mark.</h1>
 
                 <img id="profile-pic" src="/profilepic.jpg" alt="Profile" />
 
                 <p className="greeting-text">
-                    I'm a data science student based in Finland.
-                    I love creating software ranging from video games to full-stack web applications.
+                    { descriptionText }
                 </p>
 
                 <p id="website-paragraph" className="regular-text">

@@ -1,9 +1,17 @@
 import ProjectCard from "../components/ProjectCard"
+import { Helmet } from "react-helmet"
 
 
 const Projects = () => {
     return (
         <div id="projects">
+            <Helmet>
+                <title>Projects | Mark Heidmets</title>
+                <meta
+                    name="description"
+                    content="Amongst my projects is a fully-fledged video game in C++, a tennis prediction machine learning project with 4 models, as well as this personal website. Besides that, I'm working on a full-stack mobile application built with React.js, MongoDB and Express.js."
+                />
+            </Helmet>
             <div className="wrapper">
                 <h1 className="page-title">Projects</h1>
 

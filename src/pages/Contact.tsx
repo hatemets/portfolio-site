@@ -4,6 +4,7 @@ import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons"
 import { faGithubSquare, faLinkedin, faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
 import { ToastContainer, toast } from "react-toastify"
 import 'react-toastify/dist/ReactToastify.css'
+import { Helmet } from "react-helmet"
 
 
 const Contact = () => {
@@ -33,6 +34,13 @@ const Contact = () => {
 
     return (
         <div id="contact">
+            <Helmet>
+                <title>Contact me | Mark Heidmets</title>
+                <meta
+                    name="description"
+                    content="Contact me by filling out the form here or contacting me via Github, email heidmets.mark@gmail.com, Facebook or LinkedIn."
+                />
+            </Helmet>
             <div className="wrapper">
                 <h1 className="page-title">Contact me</h1>
 
